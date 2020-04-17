@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Graph : MonoBehaviour
+public abstract class Graph : MonoBehaviour
 {
     public Transform pointPrefab;
 
@@ -11,9 +11,7 @@ public class Graph : MonoBehaviour
     [Range(10, 100)]
     public int resolution = 10;
 
-    protected virtual void updateY(ref Vector3 position) {
-        position.y = Mathf.Sin(Mathf.PI * (position.x + Time.time));
-    }
+    protected abstract void updateY(ref Vector3 position);
 
     void Update()
     {
