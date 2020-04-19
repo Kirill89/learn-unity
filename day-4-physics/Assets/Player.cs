@@ -8,12 +8,25 @@ public class Player : MonoBehaviour
     private const float MAX_ACCELERATION = 10f;
     private const float MAX_AIR_ACCELERATION = 1f;
     private const float JUMP_HEIGHT = 2f;
+    private readonly Vector3 INITIAL_POSITION = new Vector3(0f, 4f, 0f);
+    private const float MIN_Y = -10f;
 
+    Renderer renderer;
     Rigidbody body;
     Vector3 desiredVelocity;
     bool desiredJump;
 
+    public Material endMaterial;
+
     bool onGround = false;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Target")
+        {
+            renderer.material = endMaterial;
+        }
+    }
 
     void OnCollisionStay(Collision collision)
     {
@@ -36,6 +49,10 @@ public class Player : MonoBehaviour
         playerInput = Vector2.ClampMagnitude(playerInput, 1f);
 
         desiredVelocity = new Vector3(playerInput.x, 0f, playerInput.y) * MAX_SPEED;
+
+        // Rotate input velocity by 45 degrees to make controls more intuitive.
+        desiredVelocity = Quaternion.Euler(0, -45, 0) * desiredVelocity;
+
         desiredJump |= Input.GetButtonDown("Jump");
     }
 
@@ -56,6 +73,12 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (transform.localPosition.y < MIN_Y)
+        {
+            transform.localPosition = INITIAL_POSITION;
+            velocity = new Vector3(0f, 0f, 0f);
+        }
+
         body.velocity = velocity;
         onGround = false;
     }
@@ -63,5 +86,6 @@ public class Player : MonoBehaviour
     void Awake()
     {
         body = GetComponent<Rigidbody>();
+        renderer = GetComponent<Renderer>();
     }
 }
