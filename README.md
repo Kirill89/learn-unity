@@ -33,3 +33,12 @@
 - collision detection
 - physic basics
 - isometric style
+
+### 2d-phisics
+
+![](2d-phisics/demo.gif)
+
+- 2d physic basics
+- sprites animation
+- script animation
+
