@@ -2,7 +2,11 @@
 
 ## References
 
-- https://catlikecoding.com/unity/tutorials/
+- https://catlikecoding.com/unity/tutorials/ (best text tutorials about 3D)
+- https://www.youtube.com/watch?v=m-J5sCRipA0 (import and use sprites)
+- https://www.youtube.com/watch?v=FRMy5B3dD_I (create animation and animation controller)
+- https://www.youtube.com/watch?v=zc8ac_qUXQY (switch levels and create UI)
+- https://github.com/RyanNielson/awesome-unity
 
 ## Tasks
 
@@ -42,3 +46,10 @@
 - sprites animation
 - script animation
 
+### multi-scene
+
+![](multi-scene/demo.gif)
+
+- save/load game
+- UI basics
+- multiple scenes
