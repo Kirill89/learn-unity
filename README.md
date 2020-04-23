@@ -65,3 +65,12 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/multi-scene/demo)__
 - save/load game
 - UI basics
 - multiple scenes
+
+### customize-gravity
+
+![](customize-gravity/demo.gif)
+
+__[play online 🎮](https://kirill89.github.io/learn-unity/customize-gravity/demo)__
+
+- get mouse click position
+- apply gravity from multiple points
