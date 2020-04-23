@@ -7,6 +7,7 @@
 - [https://www.youtube.com/watch?v=FRMy5B3dD_I](https://www.youtube.com/watch?v=FRMy5B3dD_I) (create animation and animation controller)
 - [https://www.youtube.com/watch?v=zc8ac_qUXQY](https://www.youtube.com/watch?v=zc8ac_qUXQY) (switch levels and create UI)
 - [https://github.com/RyanNielson/awesome-unity](https://github.com/RyanNielson/awesome-unity)
+- [https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d](https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d) (simulating gravity)
 
 ## Tasks
 
