@@ -75,3 +75,14 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/customize-gravity/de
 
 - get mouse click position
 - apply gravity from multiple points
+
+### gravity-golf
+
+![](gravity-golf/demo.gif)
+
+__[play online 🎮](https://kirill89.github.io/learn-unity/gravity-golf/demo)__
+
+- basically the same as "customize-gravity" but in 2D (I though about a golf game where you can control only gravity but looks like it is a bad idea)
+- precise click position detection (for 2D)
+- collision ignore for specific objects
+- a bit nicer gravity physics implementation
