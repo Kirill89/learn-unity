@@ -96,3 +96,10 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/fractal/demo)__
 - concept of mesh and material
 - coroutines
 
+### procedural-grid
+
+![](procedural-grid/demo.png)
+
+- create mesh manually
+- Gizmos (debug graphics)
+- concept of UV, tangents and normals
