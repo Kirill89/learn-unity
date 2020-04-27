@@ -108,5 +108,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/fractal/demo)__
 
 ![](rendering-matrices/demo.png)
 
+__[play online 🎮](https://kirill89.github.io/learn-unity/rendering-matrices/demo)__
+
 - animation tricks (Mathf.PingPong, Mathf.Lerp, Transform.LookAt)
 - transformation matrices
