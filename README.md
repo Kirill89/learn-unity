@@ -103,3 +103,10 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/fractal/demo)__
 - create mesh manually
 - Gizmos (debug graphics)
 - concept of UV, tangents and normals
+
+### rendering-matrices
+
+![](rendering-matrices/demo.png)
+
+- animation tricks (Mathf.PingPong, Mathf.Lerp, Transform.LookAt)
+- transformation matrices
