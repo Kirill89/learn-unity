@@ -1,32 +1,51 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float maxAngularVelocity = 270f;
     public float torqueForce = 3f;
     public float jumpForce = 8f;
-    public float minY = -10f;
+
+    private const float MIN_GROUND_NORMAL = 0.9f;
 
     private bool onGround = false;
     private Rigidbody2D rigidBody;
     private bool inputJumpPressed = false;
     private float inputHorizontal = 0f;
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void DetectGround(Collision2D collision)
     {
+
         for (var i = 0; i < collision.contactCount; i++)
         {
-            Vector2 normal = collision.GetContact(i).normal;
+            var normal = collision.GetContact(i).normal;
 
-            if (normal.y >= 0.9f)
+            if (Physics2D.gravity.normalized.Equals(Vector2.down) && normal.y >= MIN_GROUND_NORMAL)
+            {
+                onGround = true;
+            }
+            else if (Physics2D.gravity.normalized.Equals(Vector2.up) && -normal.y >= MIN_GROUND_NORMAL)
+            {
+                onGround = true;
+            }
+            else if (Physics2D.gravity.normalized.Equals(Vector2.right) && -normal.x >= MIN_GROUND_NORMAL)
+            {
+                onGround = true;
+            }
+            else if (Physics2D.gravity.normalized.Equals(Vector2.left) && normal.x >= MIN_GROUND_NORMAL)
             {
                 onGround = true;
             }
         }
     }
 
-    private void HandleJump() {
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        DetectGround(collision);
+    }
+
+    private void HandleJump()
+    {
         if (inputJumpPressed)
         {
             if (onGround)
@@ -46,14 +65,6 @@ public class Player : MonoBehaviour
         rigidBody.angularVelocity = Mathf.Clamp(rigidBody.angularVelocity, -maxAngularVelocity, maxAngularVelocity);
     }
 
-    private void HandleFall()
-    {
-        if (transform.localPosition.y < minY)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
-
     private void Update()
     {
         inputJumpPressed |= Input.GetButtonDown("Jump");
@@ -64,7 +75,6 @@ public class Player : MonoBehaviour
     {
         HandleMove();
         HandleJump();
-        HandleFall();
     }
 
     private void Awake()

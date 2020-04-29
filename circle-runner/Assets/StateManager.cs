@@ -1,7 +1,8 @@
-﻿using UnityEngine;
-using System.Runtime.Serialization.Formatters.Binary;
+﻿using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StateManager
 {
@@ -58,9 +59,9 @@ public class StateManager
         return instance;
     }
 
-    public void MarkLevelAsFinished(string sceneName)
+    public void MarkLevelAsFinished()
     {
-        state.levelsDone.Add(sceneName);
+        state.levelsDone.Add(SceneManager.GetActiveScene().name);
         Save();
     }
 }

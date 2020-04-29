@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Saw : MonoBehaviour
 {
@@ -9,7 +8,7 @@ public class Saw : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out _))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Helpers.RestartLevel();
         }
     }
 

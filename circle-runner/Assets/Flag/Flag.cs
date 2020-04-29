@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Flag : MonoBehaviour
 {
@@ -9,10 +8,11 @@ public class Flag : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out _))
         {
-            StateManager.GetInstance().MarkLevelAsFinished(SceneManager.GetActiveScene().name);
+            StateManager.GetInstance().MarkLevelAsFinished();
+
             if (!nextScene.Equals(""))
             {
-                SceneManager.LoadScene(nextScene);
+                Helpers.LoadLevel(nextScene);
             }
         }
     }

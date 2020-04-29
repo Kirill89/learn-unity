@@ -96,6 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab4df30e008e4c6089ef8650b152f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAngularVelocity: 270
+  torqueForce: 3
+  jumpForce: 8
+  minY: -10
+  maxY: 10
 --- !u!58 &1371551165129588819
 CircleCollider2D:
   m_ObjectHideFlags: 0
