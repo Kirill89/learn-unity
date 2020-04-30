@@ -96,3 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e7ad09010774373a8cf3e0598b63a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelBounds: {fileID: 688964972148902235, guid: 08a9fda380d234d278523da2ac070776,
+    type: 3}
