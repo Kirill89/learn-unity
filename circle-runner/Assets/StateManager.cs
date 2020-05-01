@@ -64,4 +64,9 @@ public class StateManager
         state.levelsDone.Add(SceneManager.GetActiveScene().name);
         Save();
     }
+
+    public bool CheckLevelFinished(string levelName)
+    {
+        return state.levelsDone.Contains(levelName);
+    }
 }
