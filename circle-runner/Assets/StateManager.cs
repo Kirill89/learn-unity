@@ -9,10 +9,10 @@ public class StateManager
     [System.Serializable]
     private class State
     {
-        public List<string> levelsDone;
+        public HashSet<string> levelsDone;
 
         public State() {
-            levelsDone = new List<string>();
+            levelsDone = new HashSet<string>();
         }
     }
     private const string FILE_NAME = "/progres.gd";

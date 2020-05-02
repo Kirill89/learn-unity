@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
-    public bool activated = false;
+    public float dealyBeforeFirstActivate = 0f;
     public float dealyBeforeActivate = 5f;
     public float dealyBeforeDeactivate = 2f;
     public float animationSpeed = 7f;
 
+    private bool activated = false;
     private Vector3 activatedPosition;
     private Vector3 deactivatedPosition;
 
@@ -21,6 +22,10 @@ public class Spikes : MonoBehaviour
 
     private IEnumerator Run()
     {
+        yield return new WaitForSeconds(dealyBeforeFirstActivate);
+
+        activated = !activated;
+
         var waitBeforeActivate = new WaitForSeconds(dealyBeforeActivate);
         var waitBeforeDeactivate = new WaitForSeconds(dealyBeforeDeactivate);
 
@@ -51,16 +56,8 @@ public class Spikes : MonoBehaviour
 
         transform.localRotation = originalRotation;
 
-        if (activated)
-        {
-            activatedPosition = transform.localPosition;
-            deactivatedPosition = transform.localPosition - transform.up * height;
-        }
-        else
-        {
-            deactivatedPosition = transform.localPosition;
-            activatedPosition = transform.localPosition + transform.up * height;
-        }
+        deactivatedPosition = transform.localPosition;
+        activatedPosition = transform.localPosition + transform.up * height;
     }
 
     private void Awake()
