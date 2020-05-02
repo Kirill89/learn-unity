@@ -115,7 +115,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/rendering-matrices/d
 
 ### circle-runner
 
-![](circle-runner/demo.png)
+![](circle-runner/demo.gif)
 
 __[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo)__
 
