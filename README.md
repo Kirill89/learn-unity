@@ -112,3 +112,13 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/rendering-matrices/d
 
 - animation tricks (Mathf.PingPong, Mathf.Lerp, Transform.LookAt)
 - transformation matrices
+
+### circle-runner
+
+![](circle-runner/demo.png)
+
+__[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo)__
+
+- close to production-ready state
+- design levels using ready prefabs
+- sounds

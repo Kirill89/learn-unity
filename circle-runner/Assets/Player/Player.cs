@@ -2,6 +2,8 @@
 
 public class Player : MonoBehaviour
 {
+    public AudioClip hitSound;
+    public AudioClip jumpSound;
     public float maxAngularVelocity = 270f;
     public float torqueForce = 3f;
     public float jumpForce = 8f;
@@ -12,6 +14,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rigidBody;
     private bool inputJumpPressed = false;
     private float inputHorizontal = 0f;
+    private AudioSource audioSource;
 
     private void DetectGround(Collision2D collision)
     {
@@ -39,6 +42,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        audioSource.PlayOneShot(hitSound);
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         DetectGround(collision);
@@ -51,6 +59,7 @@ public class Player : MonoBehaviour
             if (onGround)
             {
                 rigidBody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+                audioSource.PlayOneShot(jumpSound);
             }
 
             inputJumpPressed = false;
@@ -80,5 +89,6 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 }
