@@ -8,6 +8,7 @@
 - [https://www.youtube.com/watch?v=zc8ac_qUXQY](https://www.youtube.com/watch?v=zc8ac_qUXQY) (switch levels and create UI)
 - [https://github.com/RyanNielson/awesome-unity](https://github.com/RyanNielson/awesome-unity)
 - [https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d](https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d) (simulating gravity)
+- [https://www.youtube.com/watch?v=ICBP-7x7Chc](https://www.youtube.com/watch?v=ICBP-7x7Chc) (modelling in Blender beginner guide)
 
 ## Tasks
 
