@@ -9,6 +9,7 @@
 - [https://github.com/RyanNielson/awesome-unity](https://github.com/RyanNielson/awesome-unity)
 - [https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d](https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d) (simulating gravity)
 - [https://www.youtube.com/watch?v=ICBP-7x7Chc](https://www.youtube.com/watch?v=ICBP-7x7Chc) (modelling in Blender beginner guide)
+- [https://www.youtube.com/watch?v=Ci1jBOm_5NY](https://www.youtube.com/watch?v=Ci1jBOm_5NY) (Blender: how to cut a hole)
 
 ## Tasks
 
@@ -123,3 +124,10 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo)_
 - close to production-ready state
 - design levels using ready prefabs
 - sounds
+
+### jenga
+
+![](jenga/demo.gif)
+
+- Jenga game prototype
+- blocks with small random deformation
