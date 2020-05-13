@@ -131,3 +131,12 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo)_
 
 - Jenga game prototype
 - blocks with small random deformation
+
+### maze
+
+![](maze/demo.gif)
+
+__[play online 🎮](https://kirill89.github.io/learn-unity/maze/demo)__
+
+- randomly generated 3D maze
+- first person camera
