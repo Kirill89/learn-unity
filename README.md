@@ -17,7 +17,7 @@
 
 ![](clock/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/clock/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/clock/demo/)__
 
 - game objects
 - script basics
@@ -26,7 +26,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/clock/demo)__
 
 ![](graph/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/graph/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/graph/demo/)__
 
 - create game objects dynamically (from prefabs)
 - shader basics
@@ -35,7 +35,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/graph/demo)__
 
 ![](ball-positioning/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/ball-positioning/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/ball-positioning/demo/)__
 
 - user input
 
@@ -43,7 +43,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/ball-positioning/dem
 
 ![](physics/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/physics/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/physics/demo/)__
 
 - collision detection
 - physic basics
@@ -53,7 +53,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/physics/demo)__
 
 ![](2d-phisics/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/2d-phisics/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/2d-phisics/demo/)__
 
 - 2d physic basics
 - sprites animation
@@ -63,7 +63,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/2d-phisics/demo)__
 
 ![](multi-scene/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/multi-scene/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/multi-scene/demo/)__
 
 - save/load game
 - UI basics
@@ -73,7 +73,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/multi-scene/demo)__
 
 ![](customize-gravity/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/customize-gravity/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/customize-gravity/demo/)__
 
 - get mouse click position
 - apply gravity from multiple points
@@ -82,7 +82,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/customize-gravity/de
 
 ![](gravity-golf/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/gravity-golf/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/gravity-golf/demo/)__
 
 - basically the same as "customize-gravity" but in 2D (I though about a golf game where you can control only gravity but looks like it is a bad idea)
 - precise click position detection (for 2D)
@@ -93,7 +93,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/gravity-golf/demo)__
 
 ![](fractal/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/fractal/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/fractal/demo/)__
 
 - concept of mesh and material
 - coroutines
@@ -110,7 +110,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/fractal/demo)__
 
 ![](rendering-matrices/demo.png)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/rendering-matrices/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/rendering-matrices/demo/)__
 
 - animation tricks (Mathf.PingPong, Mathf.Lerp, Transform.LookAt)
 - transformation matrices
@@ -119,7 +119,7 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/rendering-matrices/d
 
 ![](circle-runner/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo/)__
 
 - close to production-ready state
 - design levels using ready prefabs
@@ -136,7 +136,8 @@ __[play online 🎮](https://kirill89.github.io/learn-unity/circle-runner/demo)_
 
 ![](maze/demo.gif)
 
-__[play online 🎮](https://kirill89.github.io/learn-unity/maze/demo)__
+__[play online 🎮](https://kirill89.github.io/learn-unity/maze/demo/)__
 
 - randomly generated 3D maze
 - first person camera
+
