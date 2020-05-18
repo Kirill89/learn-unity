@@ -10,6 +10,8 @@
 - [https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d](https://medium.com/@mik.szuga/simulating-gravity-in-unity-ae8258a80b6d) (simulating gravity)
 - [https://www.youtube.com/watch?v=ICBP-7x7Chc](https://www.youtube.com/watch?v=ICBP-7x7Chc) (modelling in Blender beginner guide)
 - [https://www.youtube.com/watch?v=Ci1jBOm_5NY](https://www.youtube.com/watch?v=Ci1jBOm_5NY) (Blender: how to cut a hole)
+- [https://www.youtube.com/watch?v=IAiTYaiZmY0](https://www.youtube.com/watch?v=IAiTYaiZmY0) (Blender: animation basics bones and armature)
+- [https://www.youtube.com/watch?v=Gb152Qncn2s](https://www.youtube.com/watch?v=Gb152Qncn2s) (Blender: multiple animations in one file)
 
 ## Tasks
 
